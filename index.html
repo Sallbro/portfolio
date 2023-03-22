@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+
+    <!-- swiper-slider  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <!-- iconify  -->
+    <script src="https://code.iconify.design/iconify-icon/1.0.4/iconify-icon.min.js"></script>
+
+    <!-- lottiefiles  -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo"> Portfolio </a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#project" class="nav__link">Project</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#experience" class="nav__link">Experience</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#skill" class="nav__link">Skill</a>
+                    </li>
+                    <a href="#contact" class="button button--ghost">Contact Us</a>
+                </ul>
+                <div class="nav__close" id="nav-close">
+                    <!-- <i class='bx bx-x'></i> -->
+                    <iconify-icon icon="bx:bx-x"></iconify-icon>
+                </div>
+                <img src="https://assets.codepen.io/7773162/nav-img.png" alt="" class="nav__img">
+            </div>
+            <div class="nav__toggle" id="nav-toggle">
+                <!-- <i class='bx bx-grid-alt'></i> -->
+                <iconify-icon icon="bx:bx-grid-alt"></iconify-icon>
+            </div>
+        </nav>
+    </header>
+    <!-- side navbar -->
+    <div class="sidenav_wrap">
+        <ul>
+            <li>
+                <a href="https://github.com/Sallbro">
+                    <iconify-icon icon="mdi:github"></iconify-icon>
+                </a>
+            </li>
+            <li><iconify-icon icon="ph:linkedin-logo-bold"></iconify-icon></li>
+            <li><iconify-icon icon="ri:instagram-line"></iconify-icon></li>
+        </ul>
+    </div>
+    <main class="main">
+        <!-- HOME -->
+        <section class="section about" id="home">
+            <div class="about__container container grid">
+                <div class="about__data">
+                    <h2 class="section__title about__title">Asu Salman,<br> Software Engineer </h2>
+                    <p class="about__description">To obtain a challenging position as an IT Engineer Where I can utilize
+                        my technical expertise,
+                        problem-solving skills, and experience in designing, developing, and implementing complex
+                        software solutions. I am seeking an opportunity to contribute to a dynamic team in a fast-
+                        packed environment and to continually develop my skills and knowledge in the field of IT
+                        engineering.</p>
+                    <a href="#" class="book--now">
+                        <img src="https://assets.codepen.io/7773162/svgviewer-output+%281%29_3.svg" alt="" />
+                    </a>
+                </div>
+                <img src="./assets/img/rmbg_salman.png" alt="" class="about__img">
+            </div>
+        </section>
+        <!-- PROJECT -->
+        <section class="home container" id="project">
+            <h2 class="section__title"> Project's </h2>
+            <div class="swiper home-swiper">
+                <div class="swiper-wrapper">
+                    <!-- HOME SLIDER 1 -->
+                    <section class="swiper-slide">
+                        <div class="home__content grid">
+                            <div class="home__group">
+                                <!-- <img src="./assets/img/laptop-1842297-removebg-preview.png" alt="" class="home__img"> -->
+                                <lottie-player src="https://assets2.lottiefiles.com/private_files/lf30_5u6A5U.json"
+                                    mode="bounce" background="transparent" speed="1"
+                                    style="width: 300px; height: 300px;" loop autoplay>
+                                </lottie-player>
+
+                                <div class="home__indicator"></div>
+                                <div class="home__details-img">
+                                    <h4 class="home__details-title">Technology</h4>
+                                    <span class="home__details-subtitle">
+                                        <iconify-icon icon="skill-icons:nextjs-light"></iconify-icon>
+                                        <iconify-icon icon="logos:firebase"></iconify-icon>
+                                        <iconify-icon icon="logos:nodejs-icon"></iconify-icon>
+                                        <iconify-icon icon="vscode-icons:file-type-scss"></iconify-icon>
+
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="home__data">
+                                <h3 class="home__subtitle"># Blogging Website</h3>
+                                <h1 class="home__title">Bloggy_Vloggy</h1>
+                                <p class="home__description">Blogging website were user can<strong> upload, Delete and
+                                        update </strong> blogg with time.
+                                    <br>Edit profile
+                                    <br>Can Follow and Make Follower
+                                    <br>
+                                </p>
+                                <div class="home__buttons">
+                                    <a href="https://github.com/Sallbro/Bloggy-Vloggy" class="book--now">
+                                        <h3>Checkout Repo: </h3>
+                                        <span class="repo_icon">
+                                            <iconify-icon icon="bx:git-repo-forked"></iconify-icon>
+                                        </span>
+                                    </a>
+                                    <a href="https://bloggy-vloggy.vercel.app/" class="button--link button--flex">Live
+                                        Now <i class='bx bx-right-arrow-alt button__icon'></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- HOME SLIDER 2 -->
+                    <section class="swiper-slide">
+                        <div class="home__content grid">
+                            <div class="home__group">
+                                <!-- <img src="https://assets.codepen.io/7773162/home2-img.png" alt="" class="home__img"> -->
+                                <lottie-player src="https://assets4.lottiefiles.com/private_files/lf30_qr37agb3.json"
+                                    mode="bounce" background="transparent" speed="1"
+                                    style="width: 300px; height: 300px;" loop autoplay>
+                                </lottie-player>
+                                <div class="home__indicator"></div>
+                                <div class="home__details-img">
+                                    <h4 class="home__details-title">Technology</h4>
+                                    <span class="home__details-subtitle">
+                                        <iconify-icon icon="skill-icons:solidity"></iconify-icon>
+                                        <iconify-icon icon="skill-icons:nextjs-light"></iconify-icon>
+                                        <iconify-icon icon="logos:tailwindcss-icon"></iconify-icon>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="home__data">
+                                <h3 class="home__subtitle">#Blockchain</h3>
+                                <h1 class="home__title">Lottery App </h1>
+                                <p class="home__description">
+                                    <br>loterry application using solidy
+                                    <br>Metamask Wallet
+                                    <br>
+
+                                </p>
+                                <div class="home__buttons">
+                                    <a href="https://github.com/Sallbro/blockchain-lottery-app" class="book--now">
+                                        <h3>Checkout Repo: </h3>
+                                        <span class="repo_icon">
+                                            <iconify-icon icon="bx:git-repo-forked"></iconify-icon>
+                                        </span>
+                                    </a>
+                                    <a href="https://blockchain-lottery-app.vercel.app/"
+                                        class="button--link button--flex">Live Now <i
+                                            class='bx bx-right-arrow-alt button__icon'></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- HOME SLIDER 3 -->
+                    <section class="swiper-slide">
+                        <div class="home__content grid">
+                            <div class="home__group">
+                                <!-- <img src="https://assets.codepen.io/7773162/home1-img.png" alt="" class="home__img"> -->
+                                <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_rVEgYArLER.json"
+                                    mode="bounce" background="transparent" speed="1"
+                                    style="width: 250px; height: 300px;" loop autoplay></lottie-player>
+                                <div class="home__indicator"></div>
+                                <div class="home__details-img">
+                                    <h4 class="home__details-title">Technology</h4>
+                                    <span class="home__details-subtitle">
+                                        <iconify-icon icon="vscode-icons:file-type-reactjs"></iconify-icon>
+                                        <iconify-icon icon="logos:mongodb-icon"></iconify-icon>
+                                        <iconify-icon icon="logos:nodejs-icon"></iconify-icon>
+
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="home__data">
+                                <h3 class="pumpkin__subtitle">#Ecommerce Website</h3>
+                                <h1 class="home__title"> Mobile Acessories</h1>
+                                <p class="home__description">e-commerce website to sell mobile accessories to user,using
+                                    MERN DEVELOPMENT
+
+                                    <br>Authentication using Cookies and JWT Token
+                                    <br> Add To Cart Option
+                                    <br>Payment Method Using Fake Paypal Coin Gateway
+                                    <br>Admin Dashboard (User Credential Like email,message,Add to Cart and Product
+                                    Management Like Add, Delect, Modify the Product details like price, name,
+                                    desc,etc).
+
+
+                                </p>
+                                <div class="home__buttons">
+                                    <a href="https://github.com/Sallbro/cellpoint19" class="book--now">
+                                        <h3>Checkout Repo: </h3>
+                                        <span class="repo_icon">
+                                            <iconify-icon icon="bx:git-repo-forked"></iconify-icon>
+                                        </span>
+                                    </a>
+                                    <a href="https://cellpoint-19.onrender.com" class="button--link button--flex">Live
+                                        Now <i class='bx bx-right-arrow-alt button__icon'></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- HOME SLIDER 4 -->
+                    <section class="swiper-slide">
+                        <div class="home__content grid">
+                            <div class="home__group">
+                                <!-- <img src="./assets/img/laptop-1842297-removebg-preview.png" alt="" class="home__img"> -->
+                                <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_wpugsrme.json"
+                                    mode="bounce" background="transparent" speed="1"
+                                    style="width: 300px; height: 300px;" loop autoplay></lottie-player>
+                                <div class="home__indicator"></div>
+                                <div class="home__details-img">
+                                    <h4 class="home__details-title">Technology</h4>
+                                    <span class="home__details-subtitle">
+                                        <iconify-icon icon="vscode-icons:file-type-reactjs"></iconify-icon>
+                                        <iconify-icon icon="logos:mongodb-icon"></iconify-icon>
+                                        <iconify-icon icon="logos:nodejs-icon"></iconify-icon>
+
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="home__data">
+                                <h3 class="home__subtitle"># Ecommerce Dashboard</h3>
+                                <h1 class="home__title"> Dashboard </h1>
+                                <p class="home__description">I Have Created a Dashboard for my e-commerce website where
+                                    i can manage user profile (like:email,message,add to cart option) and
+                                    product (like:add new products,delete product and modify product
+                                    (like:price,name,desc,etc))<strong>ghostkind. </strong></p>
+                                <div class="home__buttons">
+                                    <a href="https://github.com/Sallbro/cellpoint19_dashboard" class="book--now">
+                                        <h3>Checkout Repo: </h3>
+                                        <span class="repo_icon">
+                                            <iconify-icon icon="bx:git-repo-forked"></iconify-icon>
+                                        </span>
+                                    </a>
+                                    <a href=" https://cellpoint19-dashboard.onrender.com/"
+                                        class="button--link button--flex">Live Now
+                                        <i class='bx bx-right-arrow-alt button__icon'></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- HOME SLIDER 5 -->
+                    <section class="swiper-slide">
+                        <div class="home__content grid">
+                            <div class="home__group">
+                                <!-- <img src="https://assets.codepen.io/7773162/home2-img.png" alt="" class="home__img"> -->
+                                <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_YrdJ2K8cQY.json"
+                                    mode="bounce" background="transparent" speed="1"
+                                    style="width: 300px; height: 300px;" loop autoplay>
+                                </lottie-player>
+                                <div class="home__indicator"></div>
+                                <div class="home__details-img">
+                                    <h4 class="home__details-title">Technology</h4>
+                                    <span class="home__details-subtitle">
+                                        <iconify-icon icon="cib:flask"></iconify-icon>
+                                        <iconify-icon icon="vscode-icons:file-type-light-json"></iconify-icon>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="home__data">
+                                <h3 class="home__subtitle">#Extension</h3>
+                                <h1 class="home__title">Game Sys Requirement <br> 12-12-21 </h1>
+                                <p class="home__description">we display the system requirement to run particular game
+                                    we scrape the content of game from steam using <strong>web scrapper.</strong>
+                                </p>
+                                <div class="home__buttons">
+                                    <a href="https://github.com/Sallbro/reqCheck" class="book--now">
+                                        <h3>Checkout Repo: </h3>
+                                        <span class="repo_icon">
+                                            <iconify-icon icon="bx:git-repo-forked"></iconify-icon>
+                                        </span>
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- HOME SLIDER 6 -->
+                    <section class="swiper-slide">
+                        <div class="home__content grid">
+                            <div class="home__group">
+                                <!-- <img src="https://assets.codepen.io/7773162/home1-img.png" alt="" class="home__img"> -->
+                                <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_khm3kzeu.json"
+                                    background="transparent" speed="1" style="width: 300px; height: 300px;" loop
+                                    autoplay>
+                                </lottie-player>
+                                <div class="home__indicator"></div>
+                                <div class="home__details-img">
+                                    <h4 class="home__details-title">Technology</h4>
+                                    <span class="home__details-subtitle">
+                                        <iconify-icon icon="tabler:brand-django"></iconify-icon>
+                                        <iconify-icon icon="logos:tensorflow"></iconify-icon>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="home__data">
+                                <h3 class="pumpkin__subtitle">#Machine Learning</h3>
+                                <h1 class="home__title"> License Plate Detection</h1>
+                                <p class="home__description">It is Machine Learning Project.
+                                    Were we Scrape the license Plate of Moving Vehicle. </p>
+                                <div class="home__buttons">
+                                    <a href="https://github.com/Sallbro/LPI-license-plate-Detection-" class="book--now">
+                                        <h3>Checkout Repo: </h3>
+                                        <span class="repo_icon">
+                                            <iconify-icon icon="bx:git-repo-forked"></iconify-icon>
+                                        </span>
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- HOME SLIDER 7 -->
+                    <section class="swiper-slide">
+                        <div class="home__content grid">
+                            <div class="home__group">
+                                <!-- <img src="./assets/img/laptop-1842297-removebg-preview.png" alt="" class="home__img"> -->
+                                <lottie-player src="https://assets7.lottiefiles.com/packages/lf20_huwt6lxv.json"
+                                    background="transparent" speed="1" style="width: 300px; height: 300px;" loop
+                                    autoplay>
+                                </lottie-player>
+                                <div class="home__indicator"></div>
+                                <div class="home__details-img">
+                                    <h4 class="home__details-title">Technology</h4>
+                                    <span class="home__details-subtitle">
+                                        <iconify-icon icon="dashicons:html"></iconify-icon>
+                                        <iconify-icon icon="ph:file-css-bold"></iconify-icon>
+                                        <iconify-icon icon="vscode-icons:file-type-light-js"></iconify-icon>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="home__data">
+                                <h3 class="home__subtitle">#2D Games</h3>
+                                <h1 class="home__title">Mini Games <br> 12/12/21 </h1>
+                                <p class="home__description">There Multiple Game I have created to build my logic.
+                                    <strong>1.Memory Match</strong>
+                                    <strong>2.Snake</strong>
+                                    <strong>3.tic tac toe</strong>
+                                    <strong>4.subway suffer</strong>
+                                    <strong>5.note making</strong>
+                                    <strong>And Many More...</strong>
+                                </p>
+                                <div class="home__buttons">
+                                    <a href="#" class="book--now">
+                                        <h3>Checkout Repo: </h3>
+                                        <span class="repo_icon">
+                                            <iconify-icon icon="bx:git-repo-forked"></iconify-icon>
+                                        </span>
+                                    </a>
+                                    <a href="#" class="button--link button--flex">Live Now <i
+                                            class='bx bx-right-arrow-alt button__icon'></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- HOME SLIDER 8 -->
+                    <section class="swiper-slide">
+                        <div class="home__content grid">
+                            <div class="home__group">
+                                <!-- <img src="https://assets.codepen.io/7773162/home2-img.png" alt="" class="home__img"> -->
+                                <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_zi2kbnkp.json"
+                                    mode="bounce" background="transparent" speed="1"
+                                    style="width: 300px; height: 300px;" loop autoplay>
+                                </lottie-player>
+                                <div class="home__indicator"></div>
+                                <div class="home__details-img">
+                                    <h4 class="home__details-title">Technology</h4>
+                                    <span class="home__details-subtitle">
+                                        <iconify-icon icon="logos:nodejs-icon"></iconify-icon>
+                                        <iconify-icon icon="vscode-icons:file-type-light-json"></iconify-icon>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="home__data">
+                                <h3 class="home__subtitle">#Artificial Intellegance</h3>
+                                <h1 class="home__title">Summary Team Meeting (STM) <br> 12-12-21 </h1>
+                                <p class="home__description">STM(Summary Team Meet) Project task is to summarize the
+                                    team
+                                    meet like:-google meet, microsoft team meet after the end of the meet it able to
+                                    provide summary of meet.
+                                    project is fully based on machine learning.
+                                </p>
+                                <div class="home__buttons">
+                                    <a href="https://github.com/Sallbro/super_STM23" class="book--now">
+                                        <h3>Checkout Repo: </h3>
+                                        <span class="repo_icon">
+                                            <iconify-icon icon="bx:git-repo-forked"></iconify-icon>
+                                        </span>
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <!-- swiper pagination  -->
+                <div
+                    class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal">
+                    <span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button"
+                        aria-label="Go to slide 1" aria-current="true">
+                    </span>
+                    <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span>
+                    <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 3"></span>
+
+                </div>
+                <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                <!-- <div class="swiper-pagination"></div> -->
+            </div>
+        </section>
+
+        <!-- experience  -->
+        <section class="section about" id="experience">
+            <div class="new__container container">
+                <h2 class="section__title"> Experience </h2>
+                <ul class="list">
+                    <li class="list-item">
+                        <h4 class="list-item__title">
+                            3 Month Experience Of Working on Real-Time Project
+                        </h4>
+                        <span class="list-item__date">Jan 2016 - 0ct 2016</span>
+                        <p class="list-item__text">It is IT Infrastructure
+                            Management Services Mastek. I have been worked for 3 month on LPI(License Plate
+                            Detection) Project task is to captured license plate from the moving vehicle. project is
+                            fully based on machine learning.</p>
+                    </li>
+                    <li class="list-item">
+                        <h4 class="list-item__title">
+                            COLLEGE WEBSITE ACM MEMBER
+                        </h4>
+                        <span class="list-item__date">Jan 2016 - 0ct 2016</span>
+                        <p class="list-item__text">Where We Have Created Website For Our
+                            College. Purpose Of The Website To allow Student participate in event and make
+                            aware of the event going on.</p>
+                    </li>
+                    <li class="list-item">
+                        <h4 class="list-item__title">
+                            3 Month Experience Of Working on Real-Time Project
+                        </h4>
+                        <span class="list-item__date">Jan 2016 - 0ct 2016</span>
+                        <p class="list-item__text">It is IT Infrastructure
+                            Management Services same company as mentioned previous . I have been worked
+                            for 3 month on STM(Summary Team Meet) Project task is to summarize the team
+                            meet like:-google meet, microsoft team meet after the end of the meet it able to
+                            provide summary of meet. project is fully based on machine learning.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- achivement  -->
+        <div class="achv_cont container">
+            <h2 class="achv_section__title"> Achivement </h2>
+            <section class="c-section">
+                <!-- <h2 class="c-section__title"><span>Our Services</span></h2> -->
+                <ul class="c-services">
+                    <li class="c-services__item">
+                        <h3>Mastek Deep Blue Season 7 Semi-Finalist</h3>
+                        <p>It is Machine Learning Project.
+                            Were we Scrape the license Plate of Moving Vehicle. </p>
+                    </li>
+                    <li class="c-services__item">
+                        <h3>SIH(Smart India Hackathon) inter-College Hackathon Runner Ups</h3>
+                        <p>It is Global level Hackathon From which only selected Team can Participate from the college.
+                            My Team Stand AT 2nd position in one.
+                        </p>
+                    </li>
+                    <li class="c-services__item">
+                        <h3>Top 10 in AWS Deepracer international hackathon rank 70/4229 in July Month</h3>
+                        <p>Task is We Have to train a vertiual car in amazon using there services provided.
+                            I placed in Top 10. and I also got a welcome kit from Amazon.
+                        </p>
+                    </li>
+                    <li class="c-services__item">
+                        <h3>Participated in Flipkart Grid 4.0</h3>
+                        <p>Hackathon is organized by flipcart.</p>
+                    </li>
+                    <li class="c-services__item">
+                        <h3>Participated in Err-404</h3>
+                        <p>
+                            It is the first when i have participate in hackathon in 1st Year of degree college.
+                        </p>
+                    </li>
+                    <li class="c-services__item">
+                        <h3>Mastek Deep Blue Season 8 Shortlist</h3>
+                        <p>It is IT Infrastructure
+                            Management Services same company as mentioned previous . I have been worked
+                            for 3 month on STM(Summary Team Meet) Project task is to summarize the team
+                            meet like:-google meet, microsoft team meet after the end of the meet it able to
+                            provide summary of meet. project is fully based on machine learning.
+                        </p>
+                    </li>
+                </ul>
+            </section>
+        </div>
+
+        <!-- skill bar  -->
+        <section class="section about" id="skill">
+            <div class="bar_wrapper">
+                <div class="bar_container">
+                    <h2 class="section__title"> Skills </h2>
+                    <div class="skills_wrapper">
+                        <div class="skills">
+                            <div class="details">
+                                <span>HTML,HTML5</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="bar">
+                                <div id="html-bar"></div>
+                            </div>
+                        </div>
+                        <div class="skills">
+                            <div class="details">
+                                <span>CSS,SCSS,Tailwind</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="bar">
+                                <div id="css-bar"></div>
+                            </div>
+                        </div>
+                        <div class="skills">
+                            <div class="details">
+                                <span>JS,NODEJS,EXPRESSJS</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="bar">
+                                <div id="css-bar"></div>
+                            </div>
+                        </div>
+                        <div class="skills">
+                            <div class="details">
+                                <span>REACTJS,NEXTJS</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="bar">
+                                <div id="css-bar"></div>
+                            </div>
+                        </div>
+                        <div class="skills">
+                            <div class="details">
+                                <span>C,C++</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="bar">
+                                <div id="css-bar"></div>
+                            </div>
+                        </div>
+                        <div class="skills">
+                            <div class="details">
+                                <span>PYTHON,DJANGO,FLASK</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="bar">
+                                <div id="css-bar"></div>
+                            </div>
+                        </div>
+                        <div class="skills">
+                            <div class="details">
+                                <span>SQL,MONGODB,FIREBASE</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="bar">
+                                <div id="css-bar"></div>
+                            </div>
+                        </div>
+                        <div class="skills">
+                            <div class="details">
+                                <span>NETWORKING</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="bar">
+                                <div id="css-bar"></div>
+                            </div>
+                        </div>
+                        <div class="skills">
+                            <div class="details">
+                                <span>AWS,POSTMAN,GIT,GITHUB</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="bar">
+                                <div id="css-bar"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- educational -->
+        <div class="new__container container">
+            <h2 class="section__title"> Educations </h2>
+
+            <button type="button" class="collapsible">Graduation
+                <span class="btn_collap">-</span>
+            </button>
+            <div class="content active">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip
+                    ex
+                    ea commodo consequat.</p>
+            </div>
+            <button type="button" class="collapsible">Higher School
+                <span class="btn_collap">+</span>
+
+            </button>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip
+                    ex
+                    ea commodo consequat.</p>
+            </div>
+            <button type="button" class="collapsible">School
+                <span class="btn_collap">+</span>
+
+            </button>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip
+                    ex
+                    ea commodo consequat.</p>
+            </div>
+        </div>
+
+        <!-- TRICK OR TREAT -->
+        <section class="section trick" id="trick">
+            <h2 class="section__title">Art Work</h2>
+            <div class="swiper other-swiper">
+                <div class="swiper-wrapper">
+                    <!-- HOME SLIDER 1 -->
+                    <section class="swiper-slide">
+                        <h2 class="section__title slidder__title">Logo</h2>
+                        <div class="grid_cont">
+                            <div class="grid_img">
+                                <img src="./assets/img/logo/teamwork.jpeg" alt="" class="actual_img">
+                            </div>
+                            <div class="grid_img">
+                                <img src="./assets/img/logo/game.jpeg" alt="" class="actual_img">
+                            </div>
+                            <div class="grid_img">
+                                <img src="./assets/img/logo/sallgamer.jpeg" alt="" class="actual_img">
+                            </div>
+                            <div class="grid_img">
+                                <img src="./assets/img/logo/cellpoint.jpeg" alt="" class="actual_img">
+                            </div>
+                            <div class="grid_img">
+                                <img src="./assets/img/logo/bv.jpeg" alt="" class="actual_img">
+                            </div>
+                            <div class="grid_img">
+                                <img src="./assets/img/logo/teammeetsummary.jpeg" alt="" class="actual_img">
+                            </div>
+                        </div>
+                        <div class="grid_bottom">
+                            <h2>For More Follow: </h2>
+                            <iconify-icon icon="ri:instagram-line"></iconify-icon>
+                        </div>
+                    </section>
+                    <!-- HOME SLIDER 2 -->
+                    <section class="swiper-slide">
+                        <h2 class="section__title slidder__title">AI Ganerated NFT's</h2>
+                        <div class="grid_cont">
+                            <div class="grid_img">
+                                <img src="./assets/img/nft/nft1.jpeg" alt="" class="actual_img">
+                            </div>
+                            <div class="grid_img">
+                                <img src="./assets/img/nft/nft2.jpeg" alt="" class="actual_img">
+                            </div>
+                            <div class="grid_img">
+                                <img src="./assets/img/nft/nft3.jpeg" alt="" class="actual_img">
+                            </div>
+                            <div class="grid_img">
+                                <img src="./assets/img/nft/nft4.jpeg" alt="" class="actual_img">
+                            </div>
+                            <div class="grid_img">
+                                <img src="./assets/img/nft/nft5.jpeg" alt="" class="actual_img">
+                            </div>
+                            <div class="grid_img">
+                                <img src="./assets/img/nft/nft6.jpeg" alt="" class="actual_img">
+                            </div>
+                        </div>
+                        <div class="grid_bottom">
+                            <h2>For More Follow: </h2>
+                            <iconify-icon icon="ri:instagram-line"></iconify-icon>
+                        </div>
+                    </section>
+                </div>
+                <!-- swiper pagination  -->
+                <div
+                    class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal">
+                    <span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button"
+                        aria-label="Go to slide 1" aria-current="true">
+                    </span>
+                    <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span>
+                    <!-- <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 3"></span> -->
+
+                </div>
+                <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+            </div>
+        </section>
+
+        <!-- MEMORIES -->
+        <section class="section category">
+            <h2 class="section__title">Memories <br> .... </h2>
+            <div class="category__container container grid">
+                <div class="category__data">
+                    <img src="./assets/img/drivingcar.jpeg" alt="" class="category__img">
+                    <h3 class="category__title">Driving a car</h3>
+                </div>
+                <div class="category__data">
+                    <img src="assets/img/masket.jpeg" alt="" class="category__img">
+                    <h3 class="category__title">My Masket Team</h3>
+                </div>
+                <div class="category__data">
+                    <img src="assets/img/duo_friend.jpeg" alt="" class="category__img">
+                    <h3 class="category__title">College Dua Friend</h3>
+                </div>
+                <div class="category__data">
+                    <img src="assets/img/village_photo.jpeg" alt="" class="category__img">
+                    <h3 class="category__title">It's me in Village</h3>
+                </div>
+                <div class="category__data">
+                    <img src="./assets/img/self.jpeg" alt="" class="category__img">
+                    <h3 class="category__title">Taking Selfie</h3>
+                </div>
+                <div class="category__data">
+                    <img src="./assets/img/mv.jpeg" alt="" class="category__img">
+                    <h3 class="category__title">Watching Movie in Theatre </h3>
+                </div>
+                <div class="category__data">
+                    <img src="./assets/img/smart_india_hakathon.jpeg" alt="" class="category__img">
+                    <h3 class="category__title">SIH Team</h3>
+                </div>
+                <div class="category__data">
+                    <img src="./assets/img/squard.jpeg" alt="" class="category__img">
+                    <h3 class="category__title">College Squard Friend</h3>
+                </div>
+            </div>
+        </section>
+
+        <!-- OUR MailBox -->
+        <section class="section newsletter" id="contact">
+            <div class="newsletter__container container">
+                <h2 class="section__title">MailBox</h2>
+                <p class="newsletter__description">Mail Me Were You From...</p>
+                <form action="" class="newsletter__form">
+                    <input type="text" placeholder="Enter your Country" class="newsletter__input">
+                    <button class="book--now send--now">
+                        send
+                    </button>
+                </form>
+            </div>
+            <div class="ref">
+                <ul class="icon">
+                    <li>
+                        <a target="_blank" href="https://twitter.com/ATechAjay">
+                            <iconify-icon icon="uit:twitter-alt"></iconify-icon>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.instagram.com/atechajay/">
+                            <iconify-icon icon="ph:instagram-logo-thin"></iconify-icon>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.linkedin.com/in/atechajay/">
+                            <iconify-icon icon="ph:linkedin-logo-thin"></iconify-icon>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.facebook.com/atechajay/">
+                            <iconify-icon icon="iconoir:facebook-tag"></iconify-icon>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://github.com/ATechAjay">
+                            <iconify-icon icon="uit:github-alt"></iconify-icon>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://youtube.com/ATechAjay">
+                            <iconify-icon icon="ph:youtube-logo-thin"></iconify-icon>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <!-- SCROLL UP -->
+    <a href="#" class="scrollup" id="scroll-up">
+        <iconify-icon class='scrollup__icon' icon="bx:bx-up-arrow-alt"></iconify-icon>
+    </a>
+    <script src="index.js"></script>
+
+</body>
+
+</html>
